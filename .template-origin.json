@@ -1,0 +1,16 @@
+{
+    "projectName": "Gestão de Funcionários",
+    "technicalId": "gestao-de-funcionarios",
+    "baseName": "Base SaaS",
+    "baseVersion": "V1",
+    "createdAt": "2026-09-04T01:09:41.280031Z",
+    "automaticUpdates": false,
+    "suggestedPorts": {
+        "Api": 10547,
+        "Web": 11547,
+        "Postgres": 12547,
+        "Redis": 13547,
+        "MailpitWeb": 14547,
+        "MailpitSmtp": 15547
+    }
+}

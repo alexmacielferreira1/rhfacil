@@ -1,0 +1,23 @@
+.git
+.codex
+.claude
+.agents
+.env
+**/.venv
+**/.poetry-cache
+**/node_modules
+**/__pycache__
+**/.pytest_cache
+**/.ruff_cache
+**/.mypy_cache
+**/dist
+**/coverage
+uploads
+storage
+backups
+*.sqlite
+*.sqlite3
+*.db
+*.dump
+*.bak
+EXEMPLOS QUE TENHO
