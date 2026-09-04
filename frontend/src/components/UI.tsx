@@ -1,0 +1,6 @@
+import type {ReactNode} from 'react'
+export function Modal({title,children,onClose,footer}:{title:string;children:ReactNode;onClose:()=>void;footer?:ReactNode}){return <div className="modal-backdrop" onMouseDown={e=>{if(e.target===e.currentTarget)onClose()}}><section className="modal"><header><div><h2>{title}</h2><p>Preencha os dados abaixo e confirme a ação.</p></div><button className="icon-btn" onClick={onClose}>×</button></header><div className="modal-body">{children}</div>{footer&&<footer>{footer}</footer>}</section></div>}
+export function Progress({value}:{value:number}){return <div className="progress"><span style={{width:`${value}%`}}/></div>}
+export function Badge({children,tone='neutral'}:{children:ReactNode;tone?:'success'|'warning'|'danger'|'info'|'neutral'}){return <span className={`badge badge-${tone}`}>{children}</span>}
+export function Avatar({initials,large=false}:{initials:string;large?:boolean}){return <span className={`avatar ${large?'avatar-lg':''}`}>{initials}</span>}
+export function Section({title,action,children}:{title:string;action?:ReactNode;children:ReactNode}){return <section className="section-card"><div className="section-head"><h2>{title}</h2>{action}</div>{children}</section>}
